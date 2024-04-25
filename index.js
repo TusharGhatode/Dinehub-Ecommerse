@@ -14,7 +14,7 @@ require('dotenv').config()
 
 app.use(express.json())
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://dinehub1-ecommerse.netlify.app',
     methods: 'GET,POST,DELETE',
     credentials: true
 }))
