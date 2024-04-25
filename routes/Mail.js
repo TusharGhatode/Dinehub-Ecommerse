@@ -26,7 +26,7 @@ var mailGenerator = new Mailgen({
     product: {
 
         name: 'Dinehub',
-        link: 'http://localhost:5173'
+        link: 'https://dinehub1-ecommerse.netlify.app'
 
     }
 });
@@ -65,7 +65,7 @@ router.post("/sendpasswordlink", async (req, res) => {
                         button: {
                             color: '#22BC66', // Optional action button color
                             text: 'Confirm your account',
-                            link: `http://localhost:5173/update/${userfind.id}/${token}`,
+                            link: `https://dinehub1-ecommerse.netlify.app/update/${userfind.id}/${token}`,
                         }
                     },
                     outro: 'Need help, or have questions? Just reply to this email, we\'d love to help.'
