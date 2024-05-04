@@ -65,7 +65,7 @@ router.post("/login", async (req, res) => {
             const isMatch = await bcrypt.compare(password, userValid.password);
 
             if (!isMatch) {
-                res.status(450).json({ error: "invalid details" })
+                res.status(450).json({status:450, error: "invalid details" })
             } else {
 
                 const token = await userValid.generateAuthtoken();
